@@ -7,6 +7,7 @@ function CartOverview() {
 	const numOfPizzas = useSelector(getTotalPizzas);
 	const totalPrize = useSelector(getTotalPrize);
 
+	if (!numOfPizzas) return null;
 	return (
 		<div className="bg-stone-800 text-stone-200 uppercase px-4 py-4 sm:px-6 text-sm md:text-base flex justify-between items-center">
 			<p className="text-stone-300 font-semibold space-x-4 sm:space-x-6">
